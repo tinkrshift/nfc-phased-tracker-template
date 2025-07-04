@@ -1,5 +1,5 @@
 
-const STORAGE_KEY = 'routine_phased_v2';
+const STORAGE_KEY = 'routine_' + (window.location.pathname.split('/')[1] || 'default');
 let currentEditPhase = "";
 
 function getTodayKey() {
